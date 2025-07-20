@@ -1,0 +1,395 @@
+E:\cmder                                                                                                                          
+λ cd E:\level4\software_engineer\labs malk\Software_Engineer\labs                                                                 
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs                                                                      
+λ echo "Aymen kamhan ">aymen.txt                                                                                                  
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs                                                                      
+λ echo "lab1 software engineer ">>aymen.txt                                                                                       
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs                                                                      
+λ echo "lab1">>aymen.txt                                                                                                          
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs                                                                      
+λ git st                                                                                                                          
+stash         Stash the changes in a dirty working directory away                                                                 
+status        Show the working tree status                                                                                        
+stage                                                                                                                             
+stripspace                                                                                                                        
+E:\level4\software_engineer\labs malk\Software_Engineer\labs                                                                      
+λ git status                                                                                                                      
+fatal: not a git repository (or any of the parent directories): .git                                                              
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs                                                                      
+λ cd E:\level4\software_engineer\labs malk\Software_Engineer\labs                                                                 
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs                                                                      
+λ echo "Aymen kamhan ">aymen.txt                                                                                                  
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs                                                                      
+λ echo "lab1">>aymen.txt                                                                                                          
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs                                                                      
+λ echo "lab1 software engineer ">>aymen.txt                                                                                       
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs                                                                      
+λ cd E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab1                                                            
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab1                                                                 
+λ echo "lab1 software engineer ">>aymen.txt                                                                                       
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab1                                                                 
+λ echo "lab1">>aymen.txt                                                                                                          
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab1                                                                 
+λ echo "Aymen kamhan ">>aymen.txt                                                                                                 
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab1                                                                 
+λ cd E:\level4\software_engineer\labs malk\Software_Engineer\labs                                                                 
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs                                                                      
+λ cd E:\level4\software_engineer\labs malk\Software_Engineer                                                                      
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer                                                                           
+λ git init                                                                                                                        
+Initialized empty Git repository in E:/level4/software_engineer/labs malk/Software_Engineer/.git/                                 
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer (master)                                                                  
+λ git add labs                                                                                                                    
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer (master)                                                                  
+λ git commit -m " labs home work "                                                                                                
+[master (root-commit) 115e2ac]  labs home work                                                                                    
+ 1 file changed, 3 insertions(+)                                                                                                  
+ create mode 100644 labs/lab1/aymen.txt                                                                                           
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer (master)                                                                  
+λ git remote add origin https://github.com/aymenqamhan/Software_Engineer.git                                                      
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer (master)                                                                  
+λ git push -u origin main                                                                                                         
+error: src refspec main does not match any                                                                                        
+error: failed to push some refs to 'https://github.com/aymenqamhan/Software_Engineer.git'                                         
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer (master)                                                                  
+λ git push -u origin master                                                                                                       
+Enumerating objects: 5, done.                                                                                                     
+Counting objects: 100% (5/5), done.                                                                                               
+Delta compression using up to 12 threads                                                                                          
+Compressing objects: 100% (2/2), done.                                                                                            
+Writing objects: 100% (5/5), 346 bytes | 173.00 KiB/s, done.                                                                      
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)                                                                     
+remote:                                                                                                                           
+remote: Create a pull request for 'master' on GitHub by visiting:                                                                 
+remote:      https://github.com/aymenqamhan/Software_Engineer/pull/new/master                                                     
+remote:                                                                                                                           
+To https://github.com/aymenqamhan/Software_Engineer.git                                                                           
+ * [new branch]      master -> master                                                                                             
+branch 'master' set up to track 'origin/master'.                                                                                  
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer (master -> origin)                                                        
+λ cd E:\level4\software_engineer\labs malk\Software_Engineer\labs                                                                 
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ mkdir lab2                                                                                                                      
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git status                                                                                                                      
+On branch master                                                                                                                  
+Your branch is up to date with 'origin/master'.                                                                                   
+                                                                                                                                  
+nothing to commit, working tree clean                                                                                             
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git add .                                                                                                                       
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git push -u origin master                                                                                                       
+branch 'master' set up to track 'origin/master'.                                                                                  
+Everything up-to-date                                                                                                             
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git status                                                                                                                      
+On branch master                                                                                                                  
+Your branch is up to date with 'origin/master'.                                                                                   
+                                                                                                                                  
+nothing to commit, working tree clean                                                                                             
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git add labs                                                                                                                    
+fatal: pathspec 'labs' did not match any files                                                                                    
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ cd E:\level4\software_engineer\labs malk\Software_Engineer                                                                      
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer (master -> origin)                                                        
+λ git add labs                                                                                                                    
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer (master -> origin)                                                        
+λ git commit -m "add lab2 folder"                                                                                                 
+On branch master                                                                                                                  
+Your branch is up to date with 'origin/master'.                                                                                   
+                                                                                                                                  
+nothing to commit, working tree clean                                                                                             
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer (master -> origin)                                                        
+λ git push -u origin master                                                                                                       
+branch 'master' set up to track 'origin/master'.                                                                                  
+Everything up-to-date                                                                                                             
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer (master -> origin)                                                        
+λ cd E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2                                                            
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ echo "this file just view now">>documantacion.txt                                                                               
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ git add labs                                                                                                                    
+fatal: pathspec 'labs' did not match any files                                                                                    
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ git status                                                                                                                      
+On branch master                                                                                                                  
+Your branch is up to date with 'origin/master'.                                                                                   
+                                                                                                                                  
+Untracked files:                                                                                                                  
+  (use "git add <file>..." to include in what will be committed)                                                                  
+        ./                                                                                                                        
+                                                                                                                                  
+nothing added to commit but untracked files present (use "git add" to track)                                                      
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ git add .                                                                                                                       
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ git status                                                                                                                      
+On branch master                                                                                                                  
+Your branch is up to date with 'origin/master'.                                                                                   
+                                                                                                                                  
+Changes to be committed:                                                                                                          
+  (use "git restore --staged <file>..." to unstage)                                                                               
+        new file:   documantacion.txt                                                                                             
+                                                                                                                                  
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ git commit -m "add lab2 folder"                                                                                                 
+[master e2c055d] add lab2 folder                                                                                                  
+ 1 file changed, 1 insertion(+)                                                                                                   
+ create mode 100644 labs/lab2/documantacion.txt                                                                                   
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ git push -u origin master                                                                                                       
+Enumerating objects: 7, done.                                                                                                     
+Counting objects: 100% (7/7), done.                                                                                               
+Delta compression using up to 12 threads                                                                                          
+Compressing objects: 100% (2/2), done.                                                                                            
+Writing objects: 100% (5/5), 389 bytes | 389.00 KiB/s, done.                                                                      
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)                                                                     
+To https://github.com/aymenqamhan/Software_Engineer.git                                                                           
+   115e2ac..e2c055d  master -> master                                                                                             
+branch 'master' set up to track 'origin/master'.                                                                                  
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ git status                                                                                                                      
+On branch master                                                                                                                  
+Your branch is up to date with 'origin/master'.                                                                                   
+                                                                                                                                  
+nothing to commit, working tree clean                                                                                             
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ git branch                                                                                                                      
+* master                                                                                                                          
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ git add .                                                                                                                       
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ cd ..                                                                                                                           
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git add .                                                                                                                       
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git status                                                                                                                      
+On branch master                                                                                                                  
+Your branch is up to date with 'origin/master'.                                                                                   
+                                                                                                                                  
+Changes to be committed:                                                                                                          
+  (use "git restore --staged <file>..." to unstage)                                                                               
+        new file:   lab2/1.jpg                                                                                                    
+        new file:   lab2/2.jpg                                                                                                    
+        new file:   lab2/3.jpg                                                                                                    
+        new file:   lab2/4.jpg                                                                                                    
+        new file:   lab2/5.jpg                                                                                                    
+                                                                                                                                  
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git commit -m "add image"                                                                                                       
+[master 1460651] add image                                                                                                        
+ 5 files changed, 0 insertions(+), 0 deletions(-)                                                                                 
+ create mode 100644 labs/lab2/1.jpg                                                                                               
+ create mode 100644 labs/lab2/2.jpg                                                                                               
+ create mode 100644 labs/lab2/3.jpg                                                                                               
+ create mode 100644 labs/lab2/4.jpg                                                                                               
+ create mode 100644 labs/lab2/5.jpg                                                                                               
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git push -u origin master                                                                                                       
+Enumerating objects: 12, done.                                                                                                    
+Counting objects: 100% (12/12), done.                                                                                             
+Delta compression using up to 12 threads                                                                                          
+Compressing objects: 100% (8/8), done.                                                                                            
+Writing objects: 100% (9/9), 862.21 KiB | 18.34 MiB/s, done.                                                                      
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)                                                                     
+To https://github.com/aymenqamhan/Software_Engineer.git                                                                           
+   e2c055d..1460651  master -> master                                                                                             
+branch 'master' set up to track 'origin/master'.                                                                                  
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ cd lab2                                                                                                                         
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ git rm labs/lab2/1.jpg git rm labs/lab2/2.jpg git rm labs/lab2/3.jpg git rm labs/lab2/4.jpg git rm labs/lab2/5.jpg              
+fatal: pathspec 'labs/lab2/1.jpg' did not match any files                                                                         
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ git rm 1.jpg 2.jpg 3.jpg 4.jpg 5.jpg                                                                                            
+rm 'labs/lab2/1.jpg'                                                                                                              
+rm 'labs/lab2/2.jpg'                                                                                                              
+rm 'labs/lab2/3.jpg'                                                                                                              
+rm 'labs/lab2/4.jpg'                                                                                                              
+rm 'labs/lab2/5.jpg'                                                                                                              
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ git commit -m "Remove images from lab2"                                                                                         
+[master 12676ed] Remove images from lab2                                                                                          
+ 5 files changed, 0 insertions(+), 0 deletions(-)                                                                                 
+ delete mode 100644 labs/lab2/1.jpg                                                                                               
+ delete mode 100644 labs/lab2/2.jpg                                                                                               
+ delete mode 100644 labs/lab2/3.jpg                                                                                               
+ delete mode 100644 labs/lab2/4.jpg                                                                                               
+ delete mode 100644 labs/lab2/5.jpg                                                                                               
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ git push origin master                                                                                                          
+Enumerating objects: 7, done.                                                                                                     
+Counting objects: 100% (7/7), done.                                                                                               
+Delta compression using up to 12 threads                                                                                          
+Compressing objects: 100% (2/2), done.                                                                                            
+Writing objects: 100% (4/4), 361 bytes | 361.00 KiB/s, done.                                                                      
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)                                                                     
+To https://github.com/aymenqamhan/Software_Engineer.git                                                                           
+   1460651..12676ed  master -> master                                                                                             
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ git status                                                                                                                      
+On branch master                                                                                                                  
+Your branch is up to date with 'origin/master'.                                                                                   
+                                                                                                                                  
+nothing to commit, working tree clean                                                                                             
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ git log                                                                                                                         
+commit 12676ed17feaaafd6dc49e6d26bb82c4325800ca (HEAD -> master, origin/master)                                                   
+Author: Aymen Kamhan <aymenqamhan2003@gmail.com>                                                                                  
+Date:   Sun Jul 20 20:51:46 2025 +0300                                                                                            
+                                                                                                                                  
+    Remove images from lab2                                                                                                       
+                                                                                                                                  
+commit 14606511ba5c37aade6a57b77dc019b4fe2d3c70                                                                                   
+Author: Aymen Kamhan <aymenqamhan2003@gmail.com>                                                                                  
+Date:   Sun Jul 20 20:42:03 2025 +0300                                                                                            
+                                                                                                                                  
+    add image                                                                                                                     
+                                                                                                                                  
+commit e2c055d3ee94120d65419108cc6304a01e879fc5                                                                                   
+Author: Aymen Kamhan <aymenqamhan2003@gmail.com>                                                                                  
+Date:   Sun Jul 20 19:47:53 2025 +0300                                                                                            
+                                                                                                                                  
+    add lab2 folder                                                                                                               
+                                                                                                                                  
+commit 115e2ac0af5935b0fcd883ecb3b8062af4fbb5af                                                                                   
+Author: Aymen Kamhan <aymenqamhan2003@gmail.com>                                                                                  
+Date:   Sun Jul 20 19:22:39 2025 +0300                                                                                            
+                                                                                                                                  
+     labs home work                                                                                                               
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab2 (master -> origin)                                              
+λ cd ..                                                                                                                           
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ cd lab1                                                                                                                         
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab1 (master -> origin)                                              
+λ git add 1.jpg 2.jpg 3.jpg 4.jpg 5.jpg                                                                                           
+fatal: pathspec '1.jpg' did not match any files                                                                                   
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab1 (master -> origin)                                              
+λ cd ..                                                                                                                           
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git add .                                                                                                                       
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git commit -m "add image"                                                                                                       
+[master 30ced0b] add image                                                                                                        
+ 5 files changed, 0 insertions(+), 0 deletions(-)                                                                                 
+ create mode 100644 labs/lab1/image/1.jpg                                                                                         
+ create mode 100644 labs/lab1/image/2.jpg                                                                                         
+ create mode 100644 labs/lab1/image/3.jpg                                                                                         
+ create mode 100644 labs/lab1/image/4.jpg                                                                                         
+ create mode 100644 labs/lab1/image/5.jpg                                                                                         
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git push -u origin master                                                                                                       
+Enumerating objects: 13, done.                                                                                                    
+Counting objects: 100% (13/13), done.                                                                                             
+Delta compression using up to 12 threads                                                                                          
+Compressing objects: 100% (9/9), done.                                                                                            
+Writing objects: 100% (10/10), 853.44 KiB | 17.78 MiB/s, done.                                                                    
+Total 10 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)                                                                    
+To https://github.com/aymenqamhan/Software_Engineer.git                                                                           
+   12676ed..30ced0b  master -> master                                                                                             
+branch 'master' set up to track 'origin/master'.                                                                                  
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git status                                                                                                                      
+On branch master                                                                                                                  
+Your branch is up to date with 'origin/master'.                                                                                   
+                                                                                                                                  
+nothing to commit, working tree clean                                                                                             
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git add .                                                                                                                       
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git commit -m "add last image"                                                                                                  
+[master 5998e73] add last image                                                                                                   
+ 1 file changed, 0 insertions(+), 0 deletions(-)                                                                                  
+ create mode 100644 labs/lab1/image/6.jpg                                                                                         
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ git push -u origin master                                                                                                       
+Enumerating objects: 10, done.                                                                                                    
+Counting objects: 100% (10/10), done.                                                                                             
+Delta compression using up to 12 threads                                                                                          
+Compressing objects: 100% (5/5), done.                                                                                            
+Writing objects: 100% (6/6), 126.04 KiB | 21.01 MiB/s, done.                                                                      
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)                                                                     
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.                                                              
+To https://github.com/aymenqamhan/Software_Engineer.git                                                                           
+   30ced0b..5998e73  master -> master                                                                                             
+branch 'master' set up to track 'origin/master'.                                                                                  
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs (master -> origin)                                                   
+λ cd lab1                                                                                                                         
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab1 (master -> origin)                                              
+λ git status                                                                                                                      
+On branch master                                                                                                                  
+Your branch is up to date with 'origin/master'.                                                                                   
+                                                                                                                                  
+nothing to commit, working tree clean                                                                                             
+                                                                                                                                  
+E:\level4\software_engineer\labs malk\Software_Engineer\labs\lab1 (master -> origin)                                              
+λ                                                                                                                                 
