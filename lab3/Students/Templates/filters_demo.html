@@ -1,0 +1,82 @@
+{% load myfilters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTL Filters Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #b5d5f0, #c7eef0);
+            margin: 0;
+            padding: 20px;
+            color: rgb(9, 25, 240);
+        }
+        h1, h2 { text-align: center; }
+        section { margin-bottom: 30px; }
+        p { background: rgba(255,255,255,0.6); padding: 5px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+<h1>Django Template Filters Demo</h1>
+
+<section>
+    <h2>String Filters</h2>
+    <p>Default: {{ fname|default:"Kamhan" }}</p>
+    <p>Upper: {{ fname|upper }}</p>
+    <p>Lower: {{ fname|lower }}</p>
+    <p>Title: {{ fname|title }}</p>
+    <p>Capfirst: {{ fname|capfirst }}</p>
+    <p>Length: {{ fname|length }}</p>
+    <p>Slice :3  {{ fname|slice:":3" }}</p>
+    <p>Add string: {{ fname|add:" Kamhan" }}</p>
+    <p>Truncate chars (5): {{ fname|truncatechars:5 }}</p>
+    <p>Truncate words (2): {{ text|truncatewords:2 }}</p>
+    <p>Word count: {{ text|wordcount }}</p>
+    <p>Linebreaks: {{ multiline_text|linebreaks }}</p>
+</section>
+
+<section>
+    <h2>Number Filters</h2>
+    <p>Add 3: {{ number|add:3 }}</p>
+    <p>Float format (2 decimals): {{ pi|floatformat:2 }}</p>
+    <p>File size format: {{ file_size|filesizeformat }}</p>
+</section>
+
+<section>
+    <h2>Date & Time Filters</h2>
+    <p>Date (Y-m-d): {{ today|date:"Y-m-d" }}</p>
+    <p>Time (H:i): {{ now|time:"H:i" }}</p>
+    <p>Time since: {{ past_date|timesince }}</p>
+    <p>Time until: {{ future_date|timeuntil }}</p>
+</section>
+
+<section>
+    <h2>List Filters</h2>
+    <p>Length: {{ mylist|length }}</p>
+    <p>Join with comma: {{ mylist|join:", " }}</p>
+    <p>First: {{ mylist|first }}</p>
+    <p>Last: {{ mylist|last }}</p>
+    <p>Random: {{ mylist|random }}</p>
+    <p>Slice :2  {{ mylist|slice:":2" }}</p>
+</section>
+
+<section>
+    <h2>Miscellaneous</h2>
+    <p>Default if none: {{ value_none|default_if_none:"No value" }}</p>
+    <p>Yes/No: {{ is_active|yesno:"Yes,No,Maybe" }}</p>
+    <p>Escape HTML: {{ html_text|escape }}</p>
+    <p>Safe HTML: {{ html_text|safe }}</p>
+    <p>Pluralize: You have {{ count }} item{{ count|pluralize }}</p>
+    <p>Pretty print: {{ complex_data|pprint }}</p>
+</section>
+
+<section>
+    <p>Multiply: {{ 5|multiply:3 }}</p>
+    <p>{{ "django" | alternating_case }}</p>
+</section>
+
+
+</body>
+</html>

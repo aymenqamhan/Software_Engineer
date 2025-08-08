@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit</title>
+
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #b5d5f0, #c7eef0);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: rgb(9, 25, 240);
+        }
+
+        header {
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: rgb(112, 6, 240);
+            padding: 12px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:blue;">page edit_student</h1>
+
+    <h3>if</h3>
+{% if total > 250 %}
+<p color:rgb(180, 228, 184)>Ex</p>
+{% endif %}
+
+<h3>if and else</h3>
+{% if total > 250 %}
+<p color:rgb(180, 228, 184)>Ex</p>
+{% else %}
+<p style="color:brown">Goood</p>
+{% endif %}
+
+<h3>if, elif and else</h3>
+{% if total > 250 %}
+<p style="color:rgb(180, 228, 184)">Ex</p>
+{% elif total < 250 and total > 200 %}
+<p style="color:rgb(193, 98, 98)">Very Good</p>
+{% else %}
+<p style="color:brown">Goood</p>
+{% endif %}
+
+<h3>For Loop</h3>
+<ul>
+{% for sub,mark in eachsub.items %}
+<li>{{sub}} : {{mark}}</li>
+{% endfor %}
+</ul>
+
+ <a href="{% url 'home' %}"> back</a>
+</body>
+</html>
