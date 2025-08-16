@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #b5d5f0, #c7eef0);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: rgb(9, 25, 240);
+        }
+
+        header {
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-flex;
+            gap: 20px;
+            
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: rgb(112, 6, 240);
+            padding: 12px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 20px;
+            border-color: rgb(240, 9, 47);
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>📚 لوحة التحكم</header>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'show' %}">عرض الطلاب</a></li>
+            <li><a href="{% url 'edit' %}">تعديل الطلاب</a></li>
+            <li><a href="{% url 'delete' %}">حذف الطلاب</a></li>
+            <li><a href="{% url 'filters_demo' %}"> بعض فلترات ال dtl</a></li>
+        </ul>
+    </nav>  
+
+    <footer>
+        &copy; Aymen Kamhan & Osama Said
+    </footer>
+
+</body>
+</html>

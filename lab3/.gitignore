@@ -1,23 +1,11 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# تجاهل كل الملفات والمجلدات
+/*
 
-# Django stuff:
-*.log
-*.pot
-*.pyc
-db.sqlite3
-/staticfiles/
-/media/
-/.env
+# استثناء مجلد lab3 وكل ما بداخله (سمح بتتبعه)
+!lab3/
+!lab3/**
+
+# تجاهل بعض الملفات والمجلدات الأخرى التي لا تريد رفعها
 venv/
-env/
-ENV/
-
-# VSCode
-.vscode/
-
-# OS files
-.DS_Store
-Thumbs.db
+home work2.pdf
+lab1/
