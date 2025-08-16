@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>websit school</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <nav>
+        
+        <ul>
+            <li><a href="{% url 'base' %}">الرئيسية</a></li>
+            <li><a href="{% url 'tetchers' %}">المعلمين</a></li>
+            <li><a href="{% url 'students' %}">الطلاب</a></li>
+        </ul>
+        <!-- sub nav-->
+           <img src="{% static 'images/AmaticSC-Bold_0.png' %}" alt="imag" width="50" height="50">
+    </nav>
+     <br>
+     <!--anather nav-->
+     <nav>
+                <img src="{% static 'images/AmaticSC-Bold_0.png' %}" alt="imag" width="50" height="50">
+     </nav>
