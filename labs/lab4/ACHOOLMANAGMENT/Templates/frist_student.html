@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block pageTitle %}
+تفاصيل الطالب
+{% endblock %}
+
+{% block content %}
+<main style="display:flex; justify-content:center; margin-top:50px;">
+
+    <div style="width: 500px; background-color:#f9f9f9; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2); padding:30px;">
+
+        <!-- رأس البطاقة -->
+        <div style="text-align:center; margin-bottom:20px;">
+            <h2 style="color:#0d6efd;">{{ student.f_name }} {{ student.l_name }}</h2>
+            <small style="color:gray;">المعرف: {{ student.id }}</small>
+        </div>
+
+        <!-- محتوى البطاقة -->
+        <div style="line-height:2; font-size:16px;">
+            <p> <strong>العمر:</strong> {{ student.age }}</p>
+            <p> <strong>المستوى:</strong> {{ student.lavel }}</p>
+            <p> <strong>الحالة:</strong> {% if student.status %}نشط{% else %}غير نشط{% endif %}</p>
+            <p><strong>التقرير:</strong><br>{{ student.reporet }}</p>
+        </div>
+
+        <!-- أزرار -->
+        <div style="text-align:center; margin-top:25px;">
+            <a href="{% url 'student:students' %}" style="text-decoration:none; padding:10px 20px; background-color:#6c757d; color:white; border-radius:8px; margin-right:10px;">رجوع</a>
+            <a href="{% url 'student:update_student' student.id %}" style="text-decoration:none; padding:10px 20px; background-color:#ffc107; color:white; border-radius:8px;">تعديل</a>
+        </div>
+
+    </div>
+
+</main>
+{% endblock %}

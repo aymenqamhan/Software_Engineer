@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block pageTitle %}إضافة طالب جديد{% endblock %}
+
+{% block content %}
+<main class="container py-5">
+
+    <div class="text-center mb-4">
+        <h2 class="display-6 fw-bold text-primary">إضافة طالب جديد</h2>
+        <p class="text-muted">املأ البيانات التالية لإضافة طالب جديد إلى النظام</p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-body p-5">
+
+                    <form action="{% url 'student:add_student' %}" method="post">
+                        {% csrf_token %}
+
+                        <div class="mb-3">
+                            <label for="f_name" class="form-label fw-semibold">الاسم الأول:</label>
+                            <input type="text" class="form-control form-control-lg rounded-3" id="f_name" name="f_name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="l_name" class="form-label fw-semibold">الاسم الأخير:</label>
+                            <input type="text" class="form-control form-control-lg rounded-3" id="l_name" name="l_name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="age" class="form-label fw-semibold">العمر:</label>
+                            <input type="number" class="form-control form-control-lg rounded-3" id="age" name="age" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="lavel" class="form-label fw-semibold">المستوى:</label>
+                            <select class="form-select form-select-lg rounded-3" id="lavel" name="lavel" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="gpa" class="form-label fw-semibold">المعدل التراكمي:</label>
+                            <input type="number" step="0.01" class="form-control form-control-lg rounded-3" id="gpa" name="gpa" required>
+                        </div>
+
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" id="status" name="status">
+                            <label class="form-check-label fw-semibold" for="status">نشط</label>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="reporet" class="form-label fw-semibold">التقرير:</label>
+                            <textarea class="form-control rounded-3" id="reporet" name="reporet" rows="4"></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-3 px-4">إضافة الطالب</button>
+                            <a href="{% url 'student:students' %}" class="btn btn-outline-secondary btn-lg rounded-3 px-4">إلغاء</a>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+{% endblock %}

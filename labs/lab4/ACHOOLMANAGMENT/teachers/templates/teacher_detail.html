@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block pageTitle %}تفاصيل المعلم{% endblock %}
+
+{% block content %}
+<main class="container mt-5">
+    <div class="card p-4 shadow-sm">
+        <h2>{{ teacher.f_name }} {{ teacher.l_name }}</h2>
+        <p><strong>العمر:</strong> {{ teacher.age }}</p>
+        <p><strong>المستوى:</strong> {{ teacher.level }}</p>
+        <p><strong>المادة:</strong> {{ teacher.subject }}</p>
+        <p><strong>الحالة:</strong> {{ teacher.status }}</p>
+        <p><strong>التقرير:</strong> {{ teacher.report }}</p>
+        <a href="{% url 'teachers:list' %}" class="btn btn-secondary mt-3">عودة للقائمة</a>
+    </div>
+</main>
+{% endblock %}
