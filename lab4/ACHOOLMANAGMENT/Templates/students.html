@@ -4,11 +4,52 @@
 الصفحة الرئيسية
 {% endblock %}
 
-{% block content %}     
+{% block content %}
 <main>
     <div class="welcome-box">
         مرحبًا بكم في مدرسة اليمن<br>
         <p>هذه الصفحة الرئيسية للمدرسة حيث يمكنك العثور على معلومات حول المدرسة والطلاب والمعلمين.</p>
+    </div>
+
+    <div class="students-list">
+        <table>
+            <thead>
+                <tr>
+                    <th>f_name</th>
+                    <th>l_name</th>
+                    <th>age</th>
+                    <th>lavel</th>
+                    <th>gpa</th>
+                    <th>status</th>
+                    <th>reporet</th>
+                    <th>control</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in students %}
+                <tr {% if student.gpa >= 80 %}style="background-color: pink;"{% else %}style="background-color:lightgreen;"{% endif %}>
+                    <td>{{ student.f_name }}</td>
+                    <td>{{ student.l_name }}</td>
+                    <td>{{ student.age }}</td>
+                    <td>{{ student.lavel }}</td>
+                    <td>{{ student.gpa }}</td>
+                    <td>{{ student.status }}</td>
+                    <td>{{ student.reporet }}</td>
+                    <td>
+                        <a href="{% url 'student:frist_student' student.id %}" class="btn btn-info btn-sm">
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                        <a href="{% url 'student:update_student' student.id %}" class="btn btn-warning btn-sm">
+                            <i class="fas fa-edit"></i> 
+                        </a>
+                        <a href="{% url 'student:delete_student' student.id %}" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash"></i> 
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
 </main>
 {% endblock %}

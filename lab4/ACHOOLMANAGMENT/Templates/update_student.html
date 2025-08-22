@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block pageTitle %}
+تعديل بيانات الطالب
+{% endblock %}
+
+{% block content %}
+<main style="display:flex; justify-content:center; margin-top:50px;">
+
+    <div style="width:500px; background-color:#f9f9f9; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2); padding:30px;">
+
+        <!-- رأس النموذج -->
+        <div style="text-align:center; margin-bottom:25px;">
+            <h2 style="color:#0d6efd;">تعديل بيانات الطالب</h2>
+            <small style="color:gray;">المعرف: {{ student.id }}</small>
+        </div>
+
+        <!-- النموذج -->
+        <form action="" method="post" style="display:flex; flex-direction:column; gap:15px;">
+            {% csrf_token %}
+
+            <label for="f_name">الاسم الأول:</label>
+            <input type="text" id="f_name" name="f_name" value="{{ student.f_name }}" required style="padding:8px; border-radius:5px; border:1px solid #ccc;">
+
+            <label for="l_name">الاسم الأخير:</label>
+            <input type="text" id="l_name" name="l_name" value="{{ student.l_name }}" required style="padding:8px; border-radius:5px; border:1px solid #ccc;">
+
+            <label for="age">العمر:</label>
+            <input type="number" id="age" name="age" value="{{ student.age }}" required style="padding:8px; border-radius:5px; border:1px solid #ccc;">
+
+            <label for="lavel">المستوى:</label>
+            <select id="lavel" name="lavel" required style="padding:8px; border-radius:5px; border:1px solid #ccc;">
+                <option value="1" {% if student.lavel == "1" %}selected{% endif %}>1</option>
+                <option value="2" {% if student.lavel == "2" %}selected{% endif %}>2</option>
+                <option value="3" {% if student.lavel == "3" %}selected{% endif %}>3</option>
+                <option value="4" {% if student.lavel == "4" %}selected{% endif %}>4</option>
+            </select>
+
+            <label for="gpa">المعدل التراكمي:</label>
+            <input type="number" step="0.01" id="gpa" name="gpa" value="{{ student.gpa }}" required style="padding:8px; border-radius:5px; border:1px solid #ccc;">
+
+            <label for="status">الحالة:</label>
+            <input type="checkbox" id="status" name="status" {% if student.status %}checked{% endif %}> نشط
+
+            <label for="reporet">التقرير:</label>
+            <textarea id="reporet" name="reporet" style="padding:8px; border-radius:5px; border:1px solid #ccc;">{{ student.reporet }}</textarea>
+
+            <!-- الأزرار -->
+            <div style="display:flex; justify-content:center; gap:15px; margin-top:20px;">
+                <button type="submit" style="padding:10px 20px; border:none; border-radius:8px; background-color:#0d6efd; color:white; cursor:pointer;">تحديث</button>
+                <a href="{% url 'student:students' %}" style="padding:10px 20px; background-color:#6c757d; color:white; border-radius:8px; text-decoration:none;">إلغاء</a>
+            </div>
+        </form>
+
+    </div>
+
+</main>
+{% endblock %}

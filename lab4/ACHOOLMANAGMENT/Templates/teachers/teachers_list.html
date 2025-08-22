@@ -1,0 +1,66 @@
+<!-- teachers_list.html -->
+{% extends 'base.html' %}
+
+{% block pageTitle %}
+قائمة المعلمين
+{% endblock %}
+
+{% block content %}
+<main>
+    <div class="welcome-box mb-4">
+        <h2>قائمة المعلمين</h2>
+        <a href="{% url 'teachers:teacher_add' %}" class="btn btn-success">إضافة معلم جديد</a>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>الاسم الأول</th>
+                    <th>الاسم الأخير</th>
+                    <th>العمر</th>
+                    <th>المستوى</th>
+                    <th>المادة</th>
+                    <th>الحالة</th>
+                    <th>التقرير</th>
+                    <th>الإجراءات</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for teacher in teachers %}
+                    <tr>
+                        <td>{{ teacher.f_name }}</td>
+                        <td>{{ teacher.l_name }}</td>
+                        <td>{{ teacher.age }}</td>
+                        <td>{{ teacher.level }}</td>
+                        <td>{{ teacher.subject }}</td>
+                        <td>
+                            {% if teacher.status %}
+                                نشط
+                            {% else %}
+                                غير نشط
+                            {% endif %}
+                        </td>
+                        <td>{{ teacher.report }}</td>
+                        <td>
+                            <a href="{% url 'teachers:detail' teacher.id %}" class="btn btn-info btn-sm">
+                                <i class="fas fa-info-circle"></i>
+                            </a>
+                            <a href="{% url 'teachers:update' teacher.id %}" class="btn btn-warning btn-sm">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a href="{% url 'teachers:delete' teacher.id %}" class="btn btn-danger btn-sm">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td colspan="8" class="text-center">لا يوجد معلمين بعد</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</main>
+{% endblock %}

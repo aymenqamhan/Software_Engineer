@@ -1,0 +1,58 @@
+<!-- teacher_form.html -->
+{% extends 'base.html' %}
+
+{% block pageTitle %}
+{{ action }} معلم
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/teacher_form.css' %}">
+<main>
+    <div class="welcome-box">
+        <h2>{{ action }} معلم</h2>
+    </div>
+
+    <div class="form-container">
+        <form action="" method="post">
+            {% csrf_token %}
+
+            <label for="f_name">الاسم الأول:</label>
+            <input type="text" id="f_name" name="f_name" value="{{ teacher.f_name|default_if_none:'' }}" required>
+            <br>
+
+            <label for="l_name">الاسم الأخير:</label>
+            <input type="text" id="l_name" name="l_name" value="{{ teacher.l_name|default_if_none:'' }}" required>
+            <br>
+
+            <label for="age">العمر:</label>
+            <input type="number" id="age" name="age" value="{{ teacher.age|default_if_none:'' }}" required>
+            <br>
+
+            <label for="level">المستوى:</label>
+            <select id="level" name="level" required>
+                <option value="DR" {% if teacher and teacher.level == "DR" %}selected{% endif %}>DR</option>
+                <option value="PROF" {% if teacher and teacher.level == "PROF" %}selected{% endif %}>PROF</option>
+                <option value="MASTER" {% if teacher and teacher.level == "MASTER" %}selected{% endif %}>MASTER</option>
+                <option value="STU" {% if teacher and teacher.level == "STU" %}selected{% endif %}>STU</option>
+            </select>
+            <br>
+
+            <label for="subject">المادة:</label>
+            <input type="text" id="subject" name="subject" value="{{ teacher.subject|default_if_none:'' }}" required>
+            <br>
+
+            <label for="status">الحالة:</label>
+            <input type="checkbox" id="status" name="status" {% if teacher and teacher.status %}checked{% endif %}>
+            <br>
+
+            <label for="report">التقرير:</label>
+            <textarea id="report" name="report">{{ teacher.report|default_if_none:'' }}</textarea>
+            <br>
+
+            <button type="submit">{{ action }}</button>
+            <a href="{% url 'teachers:list' %}">إلغاء</a>
+        </form>
+    </div>
+</main>
+{% endblock %}

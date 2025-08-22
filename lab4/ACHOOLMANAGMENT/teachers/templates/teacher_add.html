@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block pageTitle %}إضافة معلم{% endblock %}
+
+{% block content %}
+<main class="container mt-5">
+    <div class="card p-4 shadow-sm">
+        <h2 class="mb-4">إضافة معلم جديد</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label class="form-label">الاسم الأول</label>
+                <input type="text" class="form-control" name="f_name" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">الاسم الأخير</label>
+                <input type="text" class="form-control" name="l_name" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">العمر</label>
+                <input type="number" class="form-control" name="age" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">المستوى</label>
+                <select class="form-select" name="level" required>
+                    <option value="DR">DR</option>
+                    <option value="PROF">PROF</option>
+                    <option value="MASTER">MASTER</option>
+                    <option value="STU">STU</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">المادة</label>
+                <input type="text" class="form-control" name="subject" required>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="status" id="status">
+                <label class="form-check-label" for="status">نشط</label>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">التقرير</label>
+                <textarea class="form-control" name="report"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">إضافة</button>
+            <a href="{% url 'teachers:list' %}" class="btn btn-secondary">إلغاء</a>
+        </form>
+    </div>
+</main>
+{% endblock %}

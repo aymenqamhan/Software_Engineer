@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block pageTitle %}حذف معلم{% endblock %}
+
+{% block content %}
+<main class="container mt-5">
+    <div class="card p-4 shadow-sm text-center">
+        <h2>هل أنت متأكد من حذف {{ teacher.f_name }} {{ teacher.l_name }}؟</h2>
+        <form method="post" class="mt-4">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">حذف</button>
+            <a href="{% url 'teachers:list' %}" class="btn btn-secondary">إلغاء</a>
+        </form>
+    </div>
+</main>
+{% endblock %}
