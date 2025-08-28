@@ -13,6 +13,7 @@ class Students(models.Model):
     def __str__(self):
         return f"{self.f_name} {self.l_name}"
     
+
     # Create your models here.
 class Tetchers(models.Model):
     him_marks=[('DR','DR'),('PROF','PROF'),('MASTER','MASTER'),('STU','STU')]
@@ -25,3 +26,4 @@ class Tetchers(models.Model):
     reporet = models.TextField(max_length=300)
     def __str__(self):
         return f"{self.f_name} {self.l_name} {self.lavel}"
+    

@@ -17,3 +17,4 @@ class Teacher(models.Model):
 
     def __str__(self):
         return f"{self.f_name} {self.l_name} ({self.level})"
+
